@@ -1,0 +1,525 @@
+* {
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;   
+    opacity: 0.9;
+    text-align: center;
+
+    /*reset of browser's default values*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 22px;...........
+}
+
+/* header section */
+
+header {
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+}
+
+header a { 
+    margin: 10px;
+}
+
+header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/*main content*/
+
+main {
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
+}
+
+/*mission section*/
+
+#mission {
+    width: 90%;
+    max-height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1200px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#mission h2,
+#mission h4 {
+    width: 100%;
+    padding: 0.5%;
+}
+
+/*Featured tea section*/
+
+#featured_tea {
+    width: 75%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.container-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;    
+}
+
+.container-head h2 {
+    margin: 2% 0;
+}
+
+.figure-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figure {
+    width: 300px;
+    height: 67%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 3.334%;
+}
+
+/*locations section*/
+
+#locations {
+    width: 90%;
+    max-height: 500px;
+    max-width: 1200px;
+    padding-top: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    align-items: center;
+    flex: 1 1200px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.locations-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.locations-title h2 {
+    background-color: transparent;
+}
+
+.locations-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    opacity: 1; 
+}
+
+.adress{
+    margin: 20px;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;       
+}
+
+.adress h3 {
+    padding: 5% 0;
+    width: 100%;
+}
+
+.adress p {
+    padding: 7.5% 0;
+    width: 100%;
+}
+
+/*contact info section*/
+
+#contact {
+    height: 200px;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2 {
+    margin: 1% auto;
+}
+
+#contact h5 {
+    margin: 2.9% auto;
+}
+
+/*footer*/
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-width:1133px) {
+
+    /*makes locations section higher*/
+    #locations {
+        max-height: 700px;
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width:755px) {
+
+    main {
+        top: 107px;
+    }
+
+    /*aligns header in columns*/
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header img {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    #mission {
+        width: 90%;
+        max-height: 500px;
+    }
+
+    #featured_tea {
+        width: 100%;
+        padding-top: 14.17%;
+    }
+
+    #locations {
+        width: 90%;
+        padding-top: 14.17%;
+        max-height: 1000px;
+    }
+
+    #contact {
+        height: 150px;
+    }
+
+    footer {
+        position: relative;
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    main {
+        top: 47px;
+        padding-bottom: 0;
+    }
+    /*removes headers logo*/
+    header img {
+        display: none;
+    }
+
+    #mission {
+        width: 95%;
+    }
+
+    #mission h4 {
+        font-size: 0.85rem;
+    }
+
+    #featured_tea {
+        padding-top: 46px;
+    }
+
+    #featured_tea h4 {
+        font-size: 0.95rem;
+    }
+
+    figure {
+        width: 95%;
+        margin: none;
+    }
+
+    #locations {
+        width: 95%;
+        max-height: 900px;
+        background-position: right;
+    }
+
+    .adress p {
+        padding: 5% 0;
+    }
+
+    footer {
+        padding: 3%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    main {
+        top: 109px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    
+    header a{
+        margin: 5px;
+    }
+
+    #featured_tea {
+        padding-top: 110px;
+    }
+
+    #locations {
+        margin-top: 55px;
+        padding-top: 55px;
+    }
+
+    #locations h2 {
+        padding-bottom: 20px;
+    }
+
+    #contact h2 {
+        padding-top: 20px;
+    }
+
+    footer {
+        top: 109px;
+    }
+}
+1
+
+
+
+created
+Apr '20
+last reply
+5d
+4
+replies
+2.6k
+views
+5
+users
+2
+likes
+2
+links
+
+1 YEAR LATER
+
+nicolahearn
+Jul 19
+I’ve also been surprised at how difficult this project was as well. Not sure I can answer any of your questions but interested to see other people’s solutions so thanks for sharing!
+
+1 Reply
+
+
+
+ngwolfhare
+
+nicolahearn
+Jul 20
+Currently on this guy too!! I am in a struggle with the featured tea section with weird wraps and what not I know I’m close to solving it. But trying to answer these questions lets see:
+
+Sorry I don’t quite get your wording do you mean inside the Nav people are using li with nested links? Is that what you mean? I just looked at other websites and I noticed it was a convention and I figured well these folks are getting paid (hopefully) to do this so I’m just going to copy the convention. I also need to read back and figure out how to set up the nav. menu to refer to parts of the site. I think that might be also partially what you’re asking??
+
+I’ve been making sections and using class on the section with dividers around the other elements
+
+{html} but I added spaces because codebytes doesn’t support it /and to show you what I mean:
+
+< section class=“featured”>
+< div class= “tea”>
+< p>whatevs< /p>
+< /div>
+< /section>
+
+css:
+. featured {
+}
+.tea {
+}
+.tea p {
+}
+
+that way I can make my css shorter and more readable…
+
+you should be able to override by just setting the opacity to whatever you want or if you want more control remove it from your global styles at the beginning?? Yeah I know its not the red line brief but I’m not strictly following it either. Like the Nav styles I implemented don’t have the underline cause most links now don’t look like that…They sort of just look cool and floaty. I also nixed the one px the border. I added a different google font ect… I’m making this project my own
+
+My guess is you probably shouldn’t have to hard code the px… I know it whomps but you might have to fiddle with the css or reorg the html to get it to working the way you want.
+
+I’m not sure what you mean but if you want to make the footer visible maybe remove it from the flow of the document with fixed ?? I’m not sure what you mean. The footer should just be there hanging out so long as you set it up in your html. I’ve noticed it just contains the copyright in most. I added the contact section there. I might change that but sorry I can’t give you a better answer than that.
+
+Not sure I was helpful. But I know writing through these things you can figure out stuff. I’ll post mine when it’s done which will at least maybe make my thoughts clearer than just plain ol’ English.
+
+
+
+26 DAYS LATER
+
+array0469671202
+14d
+Also couldn’t find “tea cozy” tag for this project on forum. I want to share my solution for this. Actually don’t know how bad is it, but still want to share.
+
+
+GitHub
+
+GitHub - VillainAntagonist/teacozy: Project for codecademy courses 10
+Project for codecademy courses. Contribute to VillainAntagonist/teacozy development by creating an account on GitHub.
+
+
+
+9 DAYS LATER
+
+ivanstepanenko
+5d
+Hi everyone. Not so easy project for me. Can somebody check if it is correct way to solve this project?
+
+
+GitHub
+
+GitHub - kefirn/Codecademy
+Contribute to kefirn/Codecademy development by creating an account on GitHub.
+
+1
+
+
+Hello! Looks like you’re enjoying the discussion, but you haven’t signed up for an account yet.
+When you create an account, we remember exactly what you’ve read, so you always come right back where you left off. You also get notifications, here and via email, whenever someone replies to you. And you can like posts to share the love. heartpulse
+
+
+Sign Up
+Remind me tomorrow
+no thanks
+Suggested Topics
+Topic	Replies	Views	Activity
+This Could Be An Example For Number Guesses Project
+Projects
+0	92	Dec '20
+Dasmoto Project Feedback
+Projects
+dasmotos-arts-crafts
+projects-web-html-css
+3	245	Dec '20
+Real Estate Investment Trust Analysis slight_smile
+Projects
+dna-analysis
+projects-py
+0	158	Jan 14
+Magic Eight Ball Project
+Projects
+magic-eight-ball
+projects-js
+0	299	Feb 18
+Secret message project - arrays
+Projects
+projects-js
+secret-message
+0	141	Feb 28
+Want to read more? Browse other topics in 
+Projects
+ or view latest topics.
+CODECADEMY
+About
+For Business
+Shop
+Stories
+We're Hiring
+CATALOG
+BY SUBJECT
+Full Catalog
+Web Development
+Programming
+Data Science
+Partnerships
+Design
+Game Development
+Catalog 2
+BY LANGUAGE
+HTML & CSS
+Python
+Javascript
+Java
+SQL
+Bash/Shell
+Ruby
+Filler
+Filler
+C++
+R
+C#
+PHP
+Go
+Swift
+RESOURCES
+Beta Courses
+Articles
+Forums
+Help
+Blog
+Roadmap
+Privacy Policy | Terms
+Made with ♡ in NYC © 2020 Codecademy
